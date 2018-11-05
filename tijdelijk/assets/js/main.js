@@ -224,8 +224,8 @@ function js_send() {
 		}
 	};
 
-	var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
-	var message = document.querySelector("#" + form_id_js + " [name='text']").value;
+	var subject = "new mails added";
+	var message = document.querySelector("#" + form_id_js + " [name='email']").value;
 	data_js['subject'] = subject;
 	data_js['text'] = message;
 	var params = toParams(data_js);
